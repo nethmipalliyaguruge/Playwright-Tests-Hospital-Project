@@ -56,6 +56,7 @@
 
   ## Project Structure
 
+  ```
   Playwright_Hospital_Project/
   ├── tests/
   │   ├── pages/                          # Page Object Model classes
@@ -76,9 +77,12 @@
   │   ├── doctors.spec.js                 # Doctors page tests
   │   ├── services.spec.js                # Services page tests
   │   └── aboutUs.spec.js                 # About Us page tests
+  ├── screenshots/                        # Test run screenshots
+  │   └── test-report.png
   ├── playwright.config.js                # Playwright configuration
   ├── package.json
   └── README.md
+  ```
 
   ## How to Run
 
@@ -100,9 +104,11 @@
 
   # Install Playwright browsers
   npx playwright install
+  ```
 
-  Running Tests
+  ### Running Tests
 
+  ```bash
   # Run all tests across all browsers
   npx playwright test
 
@@ -119,15 +125,15 @@
 
   # Generate and view HTML report
   npx playwright show-report
+  ```
 
-  Test Report
+  ## Test Report
 
   All Tests Passing (213/213)
 
+  ![Playwright Test Report](./screenshots/test-report.png)
 
-  screenshots/test-report.png
-
-  Key Learnings
+  ## Key Learnings
 
   - Implemented Page Object Model for scalable and maintainable test architecture
   - Handled cross-browser compatibility issues (Firefox radio button rendering)
